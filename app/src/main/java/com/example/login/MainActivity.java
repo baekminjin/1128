@@ -10,6 +10,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import android.content.Intent;
+import android.widget.Button;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -37,11 +40,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
+
+
+
         // 파이어베이스 인증 객체 선언
         firebaseAuth = FirebaseAuth.getInstance();
 
         editTextEmail = findViewById(R.id.et_email);
         editTextPassword = findViewById(R.id.et_password);
+
     }
 
     public void singUp(View view) {
@@ -115,6 +124,16 @@ public class MainActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             // 로그인 성공
                             Toast.makeText(MainActivity.this, R.string.success_login, Toast.LENGTH_SHORT).show();
+                            Button button = findViewById(R.id.btn_signIn);
+                            button.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                    //화면전환
+                                    Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                                    startActivity(intent);
+                                }
+                            });
+
                         } else {
                             // 로그인 실패
                             Toast.makeText(MainActivity.this, R.string.failed_login, Toast.LENGTH_SHORT).show();
