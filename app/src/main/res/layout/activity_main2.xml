@@ -1,58 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#ffffff">
 
     <LinearLayout
-        android:layout_width="418dp"
-        android:layout_height="533dp"
-        android:layout_marginTop="27dp"
-        android:layout_marginBottom="171dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <LinearLayout
-            android:layout_width="410dp"
-            android:layout_height="100dp"
-            android:orientation="horizontal"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="300dp">
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="410dp"
-            android:layout_height="100dp"
-            android:orientation="horizontal"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="300dp">
-
-        </LinearLayout>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/logintext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:gravity="center_horizontal"
-            android:text="가치 하자"
-            android:textAlignment="center"
+            android:text="가치하자"
             android:textColor="@color/purple_200"
+            android:textStyle="bold"
             android:textSize="25dp"
-            android:textStyle="bold" />
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
 
         <EditText
             android:id="@+id/editID"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:layout_gravity="center"
             android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
             android:ems="10"
             android:hint="아이디"
             android:inputType="textPersonName"
@@ -67,25 +46,25 @@
             android:hint="비밀번호"
             android:inputType="textPassword" />
 
-        <Button
-            android:id="@+id/btn2"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginbutton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_height="35dp"
             android:layout_marginTop="20dp"
+            android:layout_gravity="center"
             android:text="로그인"
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/btn1"
+        <TextView
+            android:id="@+id/signin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:layout_marginTop="10dp"
+            android:layout_gravity="center"
             android:text="회원가입"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="13dp"
             android:textStyle="bold" />
 
@@ -94,13 +73,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="240dp"
-            android:gravity="center_horizontal"
             android:textAlignment="center"
+            android:gravity="center_horizontal"
             android:textColor="@color/purple_200"
             android:textSize="18dp"
             android:textStyle="bold" />
 
     </LinearLayout>
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
