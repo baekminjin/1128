@@ -7,24 +7,17 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="418dp"
-        android:layout_height="533dp"
-        android:layout_marginTop="27dp"
-        android:layout_marginBottom="171dp"
+        android:layout_width="410dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="135dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:layout_width="410dp"
-            android:layout_height="100dp"
-            android:orientation="horizontal"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="300dp">
-
-        </LinearLayout>
 
         <LinearLayout
             android:layout_width="410dp"
@@ -41,30 +34,33 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:gravity="center_horizontal"
-            android:text="가치 하자"
+            android:text="가치하자"
             android:textAlignment="center"
             android:textColor="@color/purple_200"
             android:textSize="25dp"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editID"
+            android:id="@+id/edittext_email"
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
+            android:layout_height="46dp"
             android:layout_gravity="center"
-            android:layout_marginBottom="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:ems="10"
-            android:hint="아이디"
-            android:inputType="textPersonName"
-            android:text="" />
+            android:hint="E-mail"
+            android:inputType="textEmailAddress" />
 
         <EditText
-            android:id="@+id/ediPassword"
+            android:id="@+id/edittext_password"
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
             android:ems="10"
-            android:hint="비밀번호"
+            android:hint="Password"
             android:inputType="textPassword" />
 
         <Button
@@ -72,35 +68,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:text="로그인"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:background="#ffffff"
+            android:text="로그인" />
 
         <Button
             android:id="@+id/btn1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:text="회원가입"
-            android:textColor="@color/white"
-            android:textSize="13dp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="240dp"
-            android:gravity="center_horizontal"
-            android:textAlignment="center"
-            android:textColor="@color/purple_200"
-            android:textSize="18dp"
-            android:textStyle="bold" />
+            android:background="#ffffff"
+            android:text="회원가입" />
 
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
