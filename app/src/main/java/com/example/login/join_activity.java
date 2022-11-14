@@ -1,5 +1,7 @@
 package com.example.login;
 
+import static android.content.ContentValues.TAG;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,13 +15,19 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.ActionCodeSettings;
+import com.google.firebase.auth.FirebaseUser;
+
+import android.util.Log;
 
 public class join_activity extends AppCompatActivity {
+
     private FirebaseAuth firebaseAuth;
     private EditText editTextEmail;
     private EditText editTextPassword;
     private EditText editTextName;
     private Button buttonJoin;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +53,12 @@ public class join_activity extends AppCompatActivity {
                 }
             }
         });
+
+
+
     }
+
+
 
     private void createUser(String email, String password, String name) {
         firebaseAuth.createUserWithEmailAndPassword(email, password)
@@ -56,6 +69,26 @@ public class join_activity extends AppCompatActivity {
                             // 회원가입 성공시
                             Toast.makeText(join_activity.this, "회원가입 성공", Toast.LENGTH_SHORT).show();
                             finish();
+
+                            FirebaseUser user = firebaseAuth.getCurrentUser();//해당기기의 언어 설정
+
+                            user.sendEmailVerification().addOnCompleteListener(new OnCompleteListener<Void>() {
+                                @Override
+                                public void onComplete(@NonNull Task<Void> task) {
+                                    if (task.isSuccessful()) {                         //해당 이메일에 확인메일을 보냄
+                                        Log.d(TAG, "Email sent.");
+                                        Toast.makeText(join_activity.this,
+                                                "Verification email sent to " + user.getEmail(),
+                                                Toast.LENGTH_SHORT).show();
+                                    } else {                                             //메일 보내기 실패
+                                        Log.e(TAG, "sendEmailVerification", task.getException());
+                                        Toast.makeText(join_activity.this,
+                                                "Failed to send verification email.",
+                                                Toast.LENGTH_SHORT).show();
+                                    }
+                                }
+                            });
+
                         } else {
                             // 계정이 중복된 경우
                             Toast.makeText(join_activity.this, "이미 존재하는 계정입니다.", Toast.LENGTH_SHORT).show();
@@ -63,4 +96,5 @@ public class join_activity extends AppCompatActivity {
                     }
                 });
     }
+
 }
