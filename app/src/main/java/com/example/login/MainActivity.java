@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         editTextEmail = (EditText) findViewById(R.id.edittext_email);
         editTextPassword = (EditText) findViewById(R.id.edittext_password);
 
-        buttonSignUp = (Button) findViewById(R.id.btn1);
+        buttonSignUp = (Button) findViewById(R.id.btn_join);
         buttonSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        buttonLogIn = (Button) findViewById(R.id.btn2);
+        buttonLogIn = (Button) findViewById(R.id.btn_pass);
         buttonLogIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -36,9 +36,9 @@ public class join_activity extends AppCompatActivity {
 
         firebaseAuth = FirebaseAuth.getInstance();
 
-        editTextEmail = (EditText) findViewById(R.id.editText_email);
-        editTextPassword = (EditText) findViewById(R.id.editText_passWord);
-        editTextName = (EditText) findViewById(R.id.editText_name);
+        editTextEmail = (EditText) findViewById(R.id.edittext_email);
+        editTextPassword = (EditText) findViewById(R.id.edittext_password);
+        editTextName = (EditText) findViewById(R.id.edittext_name);
 
         buttonJoin = (Button) findViewById(R.id.btn_join);
         buttonJoin.setOnClickListener(new View.OnClickListener() {
