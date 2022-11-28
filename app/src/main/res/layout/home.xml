@@ -66,12 +66,14 @@
         android:id="@+id/imageView7"
         android:layout_width="413dp"
         android:layout_height="196dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="16dp"
         android:src="@drawable/android_lar3"
         app:layout_constraintBottom_toTopOf="@+id/textView7"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -181,6 +183,19 @@
             app:layout_constraintStart_toEndOf="@+id/textView8"
             app:layout_constraintTop_toTopOf="@+id/imageView9"
             app:layout_constraintVertical_bias="0.136" />
+
+    <Button
+        android:id="@+id/eat_button"
+        android:layout_width="80dp"
+        android:layout_height="63dp"
+        android:backgroundTint="#EBEBEB"
+        android:drawableBottom="@drawable/eat"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.171"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.489" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,6 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/trtyt/AndroidStudioProjects/1123-2/app/src/main/res/drawable/android_lar.xml" value="0.255" />
+        <entry key="..\:/Users/trtyt/AndroidStudioProjects/1123-2/app/src/main/res/drawable/android_lar2.xml" value="0.2165" />
+        <entry key="..\:/Users/trtyt/AndroidStudioProjects/1123-2/app/src/main/res/drawable/android_lar3.xml" value="0.2165" />
+        <entry key="..\:/Users/trtyt/AndroidStudioProjects/1123-2/app/src/main/res/drawable/android_lar4.xml" value="0.254" />
+        <entry key="..\:/Users/trtyt/AndroidStudioProjects/1123-2/app/src/main/res/font/fontstyle.xml" value="0.1" />
+        <entry key="..\:/Users/trtyt/AndroidStudioProjects/1123-2/app/src/main/res/layout/activity_join.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/trtyt/AndroidStudioProjects/1123-2/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/trtyt/AndroidStudioProjects/1123-2/app/src/main/res/layout/eat_main.xml" value="0.176" />
+        <entry key="..\:/Users/trtyt/AndroidStudioProjects/1123-2/app/src/main/res/layout/home.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/trtyt/AndroidStudioProjects/1123-2/app/src/main/res/layout/intro_activity.xml" value="0.1" />
+        <entry key="..\:/Users/trtyt/AndroidStudioProjects/1123-2/app/src/main/res/layout/wirte.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/trtyt/AndroidStudioProjects/1123-2/app/src/main/res/layout/write.xml" value="0.24947916666666667" />
         <entry key="..\:/Users/trtyt/AndroidStudioProjects/login/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.246" />
         <entry key="..\:/Users/trtyt/AndroidStudioProjects/login/app/src/main/res/drawable/android_lar.xml" value="0.138" />
         <entry key="..\:/Users/trtyt/AndroidStudioProjects/login/app/src/main/res/drawable/android_lar2.xml" value="0.254" />
